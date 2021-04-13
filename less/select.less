@@ -1,0 +1,167 @@
+@import "./variables.less";
+/**
+ * Custom Form Select Styles.
+ * Used to create custom form select menus from regular input fields.
+ */
+
+.form {
+  margin: 0px 0px 50px 0px;
+  padding: 34px 43px 40px 43px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+
+  .form-title {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 17px;
+  }
+
+  .select {
+    display: block;
+    position: relative;
+    vertical-align: middle;
+    text-align: left;
+    min-width: 324px;
+
+    & > span {
+      display: block;
+      color: lighten(@color_font, 20%);
+    }
+
+    & > input {
+      display: block;
+      cursor: pointer;
+      margin: 0;
+      padding: 10px 28px;
+      width: 100%;
+      color: #fff;
+      font-size: 18px;
+      height: 58px;
+      border: 1px solid rgba(72, 73, 74, 0.9);
+      border-radius: 7px;
+      line-height: 16px;
+      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+      user-select: none;
+      background-color: rgba(72, 73, 74, 0.9);
+      background-repeat: no-repeat;
+      background-image: linear-gradient(45deg, transparent 50%, white 50%),
+        linear-gradient(135deg, white 50%, transparent 50%);
+      background-position: calc(100% - 32.5px) center, calc(100% - 28px) center;
+      background-size: 5px 5px, 5px 5px, 1px 1.5em;
+      transition: border-color 300ms ease-in-out,
+        background-color 300ms ease-in-out, color 300ms ease-in-out;
+
+      &:hover,
+      &:focus,
+      &:active,
+      &.active {
+        border-color: #069;
+      }
+      &:focus,
+      &:active,
+      &.active {
+        box-shadow: 0 1px 12px rgba(0, 0, 0, 0.3);
+      }
+      &:focus ~ ul,
+      &:active ~ ul {
+        max-height: 200px;
+        z-index: 999;
+      }
+    }
+
+    & > ul {
+      display: block;
+      position: absolute;
+      list-style: none;
+      overflow: hidden;
+      overflow-y: auto;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      border-top: none;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      left: 0px;
+      right: 0px;
+      top: 100%;
+      background-color: #ffffff;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      max-height: 0;
+      z-index: 998;
+      transition: max-height 300ms ease-in-out;
+
+      li {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin: 0;
+        padding: 5px 28px;
+        color: #2d2d35;
+        background-color: #ffffff;
+        font-size: 18px;
+        height: 40px;
+        vertical-align: middle;
+
+        &:hover {
+          background-color: #f2f2f2;
+        }
+        &:focus,
+        &:active,
+        &.active {
+          background-color: #f0f0f0;
+        }
+      }
+
+      li + li {
+        border-top: 1px solid darken(@color_bg, 10%);
+      }
+    }
+
+    & > select {
+      display: inline-block;
+      position: absolute;
+      overflow: hidden;
+      border: none;
+      margin: 0;
+      padding: 0;
+      width: 0;
+      height: 0;
+      opacity: 0.000000001;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .form {
+    padding: 34px 18px 40px 18px;
+    .select {
+      min-width: unset;
+      width: 100%;
+      margin-bottom: 17px;
+
+      & > input {
+        height: 45px;
+        font-size: 16px;
+      }
+    }
+
+    .space-between {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  .form .select {
+    min-width: inherit;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}

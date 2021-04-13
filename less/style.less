@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Karla";
+  font-size: 18px;
+}
+
+.wrapper {
+  background-image: url(../img/bg-main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.wrapper-overlay {
+  background-color: rgba(58, 58, 58, 0.5);
+}
+
+.container {
+  max-width: 1130px;
+  display: block;
+  margin: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+@import "./fonts.less";
+@import "./header.less";
+@import "./main.less";
+@import "./select.less";
+
+@media only screen and (max-width: 1199px) {
+  .header {
+    padding: 22px 16px 85px 16px;
+  }
+}

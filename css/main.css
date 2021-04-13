@@ -1,0 +1,40 @@
+.main {
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-title {
+  font-family: "Playfair Display Bold";
+  font-size: 72px;
+  margin-bottom: 25px;
+}
+.main-subtitle {
+  font-size: 18px;
+  max-width: 500px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.main-arrow {
+  display: block;
+  margin: 25px auto;
+}
+.arrow-transform {
+  transform: rotate(180deg);
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .main {
+    padding: 0px 16px;
+  }
+  .main-title {
+    font-size: 36px;
+  }
+  .main-subtitle {
+    font-size: 16px;
+  }
+}
