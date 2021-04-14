@@ -9,6 +9,8 @@
   font-family: "Playfair Display Bold";
   font-size: 72px;
   margin-bottom: 25px;
+  line-height: 1.2;
+  max-width: 800px;
 }
 .main-subtitle {
   font-size: 18px;

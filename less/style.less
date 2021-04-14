@@ -1,3 +1,4 @@
+@import "./variables.less";
 * {
   margin: 0;
   padding: 0;
@@ -40,10 +41,48 @@ body {
   margin-top: 24px;
 }
 
+.button {
+  min-width: 200px;
+  height: 44px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-primary {
+  font-family: "Karla";
+  color: #ffffff;
+  background-color: @btn-color;
+  border: 1px solid @btn-color;
+
+  &:hover {
+    color: @btn-color;
+    background-color: #ffffff;
+    border-color: @btn-color;
+  }
+}
+
+.button-secondary {
+  font-family: "Myriad Pro";
+  color: @btn-color;
+  background-color: #ffffff;
+  border: 1px solid @btn-color;
+
+  &:hover {
+    color: #ffffff;
+    background-color: @btn-color;
+    border-color: @btn-color;
+  }
+}
+
 @import "./fonts.less";
 @import "./header.less";
 @import "./main.less";
 @import "./select.less";
+@import "./footer.less";
 
 @media only screen and (max-width: 1199px) {
   .header {

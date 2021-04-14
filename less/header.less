@@ -72,30 +72,6 @@
   color: #ffffff;
 }
 
-.button {
-  min-width: 200px;
-  height: 44px;
-  font-size: 18px;
-  font-weight: 400;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button-order {
-  font-family: "Karla";
-  color: #ffffff;
-  background-color: #da6f5b;
-  border: 1px solid #da6f5b;
-
-  &:hover {
-    color: #da6f5b;
-    background-color: #ffffff;
-    border-color: #da6f5b;
-  }
-}
-
 /* MEDIA QUERY */
 @media only screen and (max-width: 768px) {
   .nav-menu {
@@ -157,7 +133,8 @@
     }
   }
 
-  .button-order {
+  .button-primary,
+  .button-secondary {
     font-size: 16px;
   }
 
@@ -178,7 +155,7 @@
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-  .button {
+  .button.button-primary {
     min-width: 110px;
   }
 }

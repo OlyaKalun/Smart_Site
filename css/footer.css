@@ -1,0 +1,127 @@
+.footer {
+  padding: 75px 0px 80px 0px;
+}
+.footer-title {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 48px;
+  color: #2d2d35;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.footer-card .card {
+  padding: 35px 70px;
+  max-width: 730px;
+  width: 100%;
+  box-shadow: 0px 0px 20px -7px rgba(88, 88, 88, 0.2);
+}
+.footer-card .card p {
+  font-family: "Karla Italic";
+  font-size: 18px;
+  color: #5b5e6b;
+  text-align: center;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.footer-card .card hr {
+  margin: 15px 10px;
+  border-color: #f1f5f7;
+  border-style: solid;
+}
+.footer-card .card .author {
+  font-family: "Ovo";
+  font-weight: 400;
+  font-size: 18px;
+  color: #2d2d35;
+}
+.splide .splide__pagination {
+  bottom: -50px;
+  width: 10%;
+  display: none;
+}
+.splide .splide__pagination__page {
+  width: 11px;
+  height: 11px;
+  margin-right: 0px;
+}
+.splide .splide__pagination li {
+  margin-right: 18px;
+}
+.splide .splide__pagination li:last-child {
+  margin-right: 0px;
+}
+.splide .splide__pagination__page.is-active {
+  width: 13px;
+  height: 13px;
+  border: 2px solid #333333;
+  transform: none;
+}
+.splide .splide__arrow.splide__arrow--next,
+.splide .splide__arrow.splide__arrow--prev {
+  background: none;
+}
+.splide .splide__arrow.splide__arrow--prev {
+  left: 29%;
+}
+.splide .splide__arrow.splide__arrow--next {
+  right: 29%;
+}
+.splide .splide__arrow svg {
+  width: 24px;
+  height: 60px;
+  fill: #6c6c72;
+}
+.splide .splide__arrow {
+  top: 50%;
+  transform: rotate(180deg);
+}
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
+.footer-content {
+  max-width: 730px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+.footer-pagination {
+  font-family: "Ovo";
+  font-size: 24px;
+  color: #2d2d35;
+}
+@media only screen and (max-width: 768px) {
+  .footer-title {
+    font-size: 36px;
+  }
+  .footer-card .card {
+    max-width: 289px;
+  }
+  .footer-card .card p,
+  .footer-card .card .author {
+    font-size: 16px;
+  }
+  .splide .splide__arrow.splide__arrow--prev {
+    left: 2px;
+  }
+  .splide .splide__arrow.splide__arrow--next {
+    right: 2px;
+  }
+  .footer-container {
+    padding: 0px 16px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-pagination {
+    margin-bottom: 25px;
+  }
+}
