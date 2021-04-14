@@ -66,42 +66,54 @@ body {
 }
 @font-face {
   font-family: "Karla";
-  src: url("../fonts/Karla-Regular.woff2") format("woff2"), url("../fonts/Karla-Regular.woff") format("woff"), url("../fonts/Karla-Regular.ttf") format("truetype");
+  src: url("../fonts/Karla-Regular.woff2") format("woff2"),
+    url("../fonts/Karla-Regular.woff") format("woff"),
+    url("../fonts/Karla-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Karla Italic";
-  src: url("../fonts/Karla-Italic.woff2") format("woff2"), url("../fonts/Karla-Italic.woff") format("woff"), url("../fonts/Karla-Italic.ttf") format("truetype");
+  src: url("../fonts/Karla-Italic.woff2") format("woff2"),
+    url("../fonts/Karla-Italic.woff") format("woff"),
+    url("../fonts/Karla-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Playfair Display";
-  src: url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Regular.woff") format("woff"), url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  src: url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/PlayfairDisplay-Regular.woff") format("woff"),
+    url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Playfair Display Bold";
-  src: url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Bold.woff") format("woff"), url("../fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+  src: url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2"),
+    url("../fonts/PlayfairDisplay-Bold.woff") format("woff"),
+    url("../fonts/PlayfairDisplay-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Myriad Pro";
-  src: url("../fonts/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro-Regular.woff") format("woff"), url("../fonts/MyriadPro-Regular.ttf") format("truetype");
+  src: url("../fonts/MyriadPro-Regular.woff2") format("woff2"),
+    url("../fonts/MyriadPro-Regular.woff") format("woff"),
+    url("../fonts/MyriadPro-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Ovo";
-  src: url("../fonts/Ovo.woff2") format("woff2"), url("../fonts/Ovo.woff") format("woff"), url("../fonts/Ovo.ttf") format("truetype");
+  src: url("../fonts/Ovo.woff2") format("woff2"),
+    url("../fonts/Ovo.woff") format("woff"),
+    url("../fonts/Ovo.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -198,7 +210,7 @@ body {
     margin-bottom: 60px;
   }
   .nav-item:last-child.active {
-    border-bottom: no;
+    border-bottom: none;
   }
   .nav-item.active {
     border-bottom: 1px solid #fff;
@@ -327,10 +339,12 @@ body {
   user-select: none;
   background-color: rgba(72, 73, 74, 0.9);
   background-repeat: no-repeat;
-  background-image: linear-gradient(45deg, transparent 50%, white 50%), linear-gradient(135deg, white 50%, transparent 50%);
+  background-image: linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(135deg, white 50%, transparent 50%);
   background-position: calc(100% - 32.5px) center, calc(100% - 28px) center;
   background-size: 5px 5px, 5px 5px, 1px 1.5em;
-  transition: border-color 300ms ease-in-out, background-color 300ms ease-in-out, color 300ms ease-in-out;
+  transition: border-color 300ms ease-in-out, background-color 300ms ease-in-out,
+    color 300ms ease-in-out;
 }
 .form .select > input:hover,
 .form .select > input:focus,
